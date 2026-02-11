@@ -54,7 +54,9 @@ Cambia el diagrama para representar el nuevo estado del repositorio: tanto el gr
 **RESPUESTA**
 ![ejercicio_git_pregunta1](media/ejercicio_git_pregunta1_2.svg)
 
-**Se crearía una nueva rama desde el mismo commit en el que se encuentra idea, pero no se crearía un commit nuevo**
+**Se crearía una nueva rama desde el mismo commit en el que se encuentra idea, pero no se crearía un commit nuevo**  
+**El diagrama no cambiaría hasta que empiece a haber divergencia entre las ramas**
+
 #### Pregunta 2
 
 Supongamos que hemos decidido integrar los cambios de la rama `idea` a `master`, así que cambiamos de rama y ejecutamos un merge:
