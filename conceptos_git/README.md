@@ -52,7 +52,7 @@ git checkout another-idea
 
 Cambia el diagrama para representar el nuevo estado del repositorio: tanto el grafo de commits como la tabla de branches pueden cambiar.
 **RESPUESTA**
-![ejercicio_git_pregunta1](media/ejercicio_git_pregunta1.svg)
+![ejercicio_git_pregunta1](media/ejercicio_git_pregunta1_2.svg)
 
 **Se crearía una nueva rama desde el mismo commit en el que se encuentra idea, pero no se crearía un commit nuevo**
 #### Pregunta 2
