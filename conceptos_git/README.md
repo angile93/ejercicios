@@ -67,9 +67,9 @@ git merge idea
 Cambia el diagrama para representar el nuevo estado del repositorio: tanto el grafo de commits como la tabla de branches pueden cambiar.
 
 **RESPUESTA**
-![ejercicio_git_pregunta2](media/ejercicio_git_pregunta2.svg)
+![ejercicio_git_pregunta2](media/ejercicio_git_pregunta2_2.svg)
 **En este caso si se crearía un commit nuevo, que partiría de los puntos en los que se encontraran "idea" y "master", y la rama master avanzaría hasta este nuevo commit.
-La ramas "idea" y "another-idea" se mantendrán tal y como estaban**
+La rama "idea" se mantendrá tal y como estaba**
 
 #### Pregunta 3
 
@@ -85,6 +85,7 @@ Cambia el diagrama para representar el nuevo estado del repositorio: tanto el gr
 Partiendo del escenario inicial, estabamos trabajando en la rama idea
 El reset --hard traería el commit final de master y nos lo "chafaria" en nuestro espacio de trabajo, en el caso de la imagen, perderiamos 5c277a8 y las dos ramas estarían ahora en 4f56b96
 Dejo al final de la imagen que sería tecnicamente posible recuperar el commit perdido (que ha sido sobreescrito por master), buscandolo con el comando `git reflog`
+Si hubiera cambios o archivos uncommited en nuestro espacio de trabajo, serían eliminados totalmente, por lo que no podriamos rescatarlos ni buscando en reflog.
 
 
 Marta was here4
