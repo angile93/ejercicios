@@ -52,6 +52,8 @@ git checkout another-idea
 
 Cambia el diagrama para representar el nuevo estado del repositorio: tanto el grafo de commits como la tabla de branches pueden cambiar.
 
+![ejercicio_git_pregunta1](media/ejercicio_git_pregunta1.svg)
+
 #### Pregunta 2
 
 Supongamos que hemos decidido integrar los cambios de la rama `idea` a `master`, así que cambiamos de rama y ejecutamos un merge:
