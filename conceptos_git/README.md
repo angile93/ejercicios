@@ -69,7 +69,7 @@ Cambia el diagrama para representar el nuevo estado del repositorio: tanto el gr
 **RESPUESTA**
 ![ejercicio_git_pregunta2](media/ejercicio_git_pregunta2.svg)
 **En este caso si se crearía un commit nuevo, que partiría de los puntos en los que se encontraran "idea" y "master", y la rama master avanzaría hasta este nuevo commit.
-Las ramas "idea" y "another-idea" se mantendrán tal y como estaban**
+La ramas "idea" y "another-idea" se mantendrán tal y como estaban**
 
 #### Pregunta 3
 
@@ -81,13 +81,10 @@ git reset --hard master
 
 Cambia el diagrama para representar el nuevo estado del repositorio: tanto el grafo de commits como la tabla de branches pueden cambiar.
 **RESPUESTA**
-![ejercicio_git_pregunta3](media/ejercicio_git_pregunta3.svg)
-**En este caso particular, tal y como se describe el orden de comandos en el ejercicio, no pasaría nada.**
-Explicación:
-Como justo antes hemos hecho un "checkout master" reset nos esta moviendo a donde ya estabamos. Sin cambios en este aspecto.
-`--hard` sobreescribiría nuestro directorio para ser tal y como era en el ultimo commit de master, así que en principio no pasa nada.
-Si tuvieramos archivos sin commit, por ejemplo, si que los perderíamos, así que el daño depende de cuanto hemos escrito mientras nos bebemos las botellas de vino.
-Otro ejemplo peligroso es algo como `git reset --hard HEAD~1`, que nos mandaría un commit al pasado, en este caso antes del merge. (y aun asi podriamos rescatar algo mirando con `git reflog`)
+![ejercicio_git_pregunta3](media/ejercicio_git_pregunta3_2.svg)
+Partiendo del escenario inicial, estabamos trabajando en la rama idea
+El reset --hard traería el commit final de master y nos lo "chafaria" en nuestro espacio de trabajo, en el caso de la imagen, perderiamos 5c277a8 y las dos ramas estarían ahora en 4f56b96
+Dejo al final de la imagen que sería tecnicamente posible recuperar el commit perdido (que ha sido sobreescrito por master), buscandolo con el comando `git reflog`
 
 
 Marta was here4
